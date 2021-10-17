@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".catViewActivity">
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintTextColor="@color/accent"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_cat_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_cat_icon"
+                android:drawablePadding="16dp"
+                android:hint="Cat Name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintTextColor="@color/accent"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_cat_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_color_icon"
+                android:drawablePadding="16dp"
+                android:hint="Cat Color" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:helperText="Required"
+            app:helperTextTextColor="@color/required"
+            app:hintTextColor="@color/accent"
+            android:id="@+id/wieghth"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_cat_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_weight_svgrepo_com"
+                android:drawablePadding="16dp"
+                android:hint="Cat weight"
+                android:textColorHint="@color/accent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:hintTextColor="@color/accent"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_cat_eye_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/ic_eye_icon"
+                android:drawablePadding="16dp"
+                android:hint="Cat Eye Color" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        >
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/primary"
+                app:expandedTitleMarginEnd="10dp"
+                app:expandedTitleMarginStart="26dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_cat_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cat_1"
+                    app:layout_collapseMode="parallax" />
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        app:layout_collapseMode="pin"
+                        app:title="@string/app_name"
+                        android:id="@+id/toolbar"
+                        style="@style/Theme.AppCompat.Light"
+                        />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

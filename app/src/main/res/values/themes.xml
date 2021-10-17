@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Cats_final" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/icons</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/icons</item>
+
+        <item name="titleTextColor">@color/icons</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    
+    <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowBackground">@drawable/splash</item>
+        
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance">
+
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:fontFamily"></item>
+
+    </style>
+    
+</resources>
